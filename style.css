@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 400px;
+    height: 1200px;
+    padding: 30px;
+}
+
+
+.box{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+/* RED GREEN BLUE */
+.red{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.green{
+    background-color: hsl(184, 100%, 22%);
+}
+.blue{
+    background-color: hsl(179, 100%, 13%);
+}
+/* RED GREEN BLUE BUTTONS */
+.red-button{
+    color: hsl(31, 77%, 52%);
+}
+.green-button{
+    color: hsl(184, 100%, 22%);
+}
+.blue-button{
+    color: hsl(179, 100%, 13%);
+}
+/* --------------- */
+.red p,.green p,.blue p{
+    font-size: 100%;
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.red-button, .green-button, .blue-button{
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+/* -------------------- */
+.tittle{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 20px;
+    padding-left: 0px;
+}
+/* BUTTONS */
+.button{
+    border-radius: 55px;
+    background: white;
+    border: 1px solid white;
+    font-size: 16px;
+    padding: 10px 25px;
+    transition: background 0.4s;
+}
+.button:hover .red-button, button:hover .green-button, .button:hover .blue-button{
+    color: white;
+}
+.button:hover{
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.footer{
+    color: black;
+    position: absolute;
+    bottom: 5px;
+}
+
+.footer a{
+    color: red;
+    text-decoration: none;
+}
+
+@media (min-width: 1440px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 940px;
+        height: 530px;
+    }
+    .button{
+        margin-top: 60px;
+    }
+}
