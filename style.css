@@ -31,6 +31,8 @@ body{
 /* RED GREEN BLUE */
 .red{
     background-color: hsl(31, 77%, 52%);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 
 }
 .green{
@@ -38,6 +40,8 @@ body{
 }
 .blue{
     background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 /* RED GREEN BLUE BUTTONS */
 .red-button{
@@ -114,5 +118,18 @@ body{
     }
     .button{
         margin-top: 60px;
+    }
+    .blue{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .red{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 0px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    
     }
 }
